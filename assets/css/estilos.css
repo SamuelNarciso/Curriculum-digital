@@ -3,7 +3,6 @@
   color: #eee;
   background: #0b2f50;
   width: 30%;
-  height: 100%;
 }
 
 .contenedor-usuario .foto {
@@ -32,6 +31,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 40px;
+  padding-bottom: 0;
 }
 
 .contenedor-usuario aside .contacto,
@@ -43,9 +43,12 @@
 
 .contenedor-usuario aside .contacto .imagen {
   padding: 5px;
-  width: 42px;
   background: #eee;
   border-radius: 200px 200px 0px 200px;
+}
+
+.contenedor-usuario aside .contacto .imagen img {
+  width: 22px;
 }
 
 .contenedor-usuario aside .contacto .dato {
@@ -217,9 +220,15 @@
 }
 
 * .titulo-2 {
-  font-weight: 700;
   font-size: 19px;
+  font-weight: 700;
   margin-bottom: 2.5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .titulo-1 {
+    font-size: 33px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -232,11 +241,25 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contenedor-general .titulo-1 {
+    font-size: 34px;
+  }
   .contenedor-general .contenedor-usuario {
     width: 100%;
   }
   .contenedor-general .contenedor-info-general {
     width: 100%;
+  }
+  .contenedor-general .contenedor-info-general footer .referencias {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contenedor-general .contenedor-info-general footer .referencias .referencia {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 25px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

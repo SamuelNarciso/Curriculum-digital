@@ -1,6 +1,12 @@
 @import "aside";
 @import "main";
 
+@mixin estilo-titulos($font-sz, $font-wgt, $margin) {
+    font-size: $font-sz;
+    font-weight: $font-wgt;
+    margin-bottom: $margin;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,37 +19,49 @@
         margin: 20px auto;
         height: 100%;
         display: flex;
-        box-shadow: 1px 1px 16px -3px rgba(0,0,0,1);
+        box-shadow: 1px 1px 16px -3px rgba(0, 0, 0, 1);
     }
 
     .titulo-1 {
-        font-size: 38px;
-        font-weight: 500;
-        margin-bottom: 20px;
+        @include estilo-titulos(38px, 500, 20px);
         .linea {
             border-bottom: 2px solid rgb(212, 212, 212);
         }
     }
     .titulo-2 {
-        font-weight: 700;
-        font-size: 19px;
-        margin-bottom: 2.5px;
+        @include estilo-titulos(19px, 700, 2.5px);
     }
 }
 
-
+@media only screen and (max-width: 900px) {
+    .titulo-1 {
+        font-size: 33px;
+    }
+}
 @media only screen and (max-width: 800px) {
     .contenedor-general {
         display: flex;
         flex-direction: column;
-        .contenedor-usuario{
+        .titulo-1 {
+            font-size: 34px;
+        }
+        .contenedor-usuario {
             width: 100%;
         }
-        
-        .contenedor-info-general{
+
+        .contenedor-info-general {
             width: 100%;
 
-           
+            footer {
+                .referencias {
+                    flex-direction: row;
+                    .referencia {
+                        padding: 0;
+                        width: 100%;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
         }
     }
-  }
+}
