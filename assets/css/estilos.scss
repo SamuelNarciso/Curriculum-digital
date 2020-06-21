@@ -1,0 +1,49 @@
+@import "aside";
+@import "main";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+    .contenedor-general {
+        background: #f4f6ff;
+        width: 90%;
+        margin: 20px auto;
+        height: 100%;
+        display: flex;
+        box-shadow: 1px 1px 16px -3px rgba(0,0,0,1);
+    }
+
+    .titulo-1 {
+        font-size: 38px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        .linea {
+            border-bottom: 2px solid rgb(212, 212, 212);
+        }
+    }
+    .titulo-2 {
+        font-weight: 700;
+        font-size: 19px;
+        margin-bottom: 2.5px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .contenedor-general {
+        display: flex;
+        flex-direction: column;
+        .contenedor-usuario{
+            width: 100%;
+        }
+        
+        .contenedor-info-general{
+            width: 100%;
+
+           
+        }
+    }
+  }

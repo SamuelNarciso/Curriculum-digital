@@ -1,0 +1,242 @@
+.contenedor-usuario {
+  overflow: hidden;
+  color: #eee;
+  background: #0b2f50;
+  width: 30%;
+  height: 100%;
+}
+
+.contenedor-usuario .foto {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor-usuario .foto img {
+  border: 2.5px solid #fff;
+  border-radius: 50%;
+  width: 50%;
+  margin-top: 40px;
+}
+
+.contenedor-usuario aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+.contenedor-usuario aside .contacto,
+.contenedor-usuario aside .estudios {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 40px;
+}
+
+.contenedor-usuario aside .contacto .imagen {
+  padding: 5px;
+  width: 42px;
+  background: #eee;
+  border-radius: 200px 200px 0px 200px;
+}
+
+.contenedor-usuario aside .contacto .dato {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-usuario aside .contacto .dato .informacion {
+  padding-left: 25px;
+  font-size: 22px;
+}
+
+.contenedor-usuario aside .estudios {
+  color: #e4e1e1;
+}
+
+.contenedor-usuario aside .estudios .informacion {
+  margin-bottom: 15px;
+  letter-spacing: 1.3px;
+}
+
+.contenedor-usuario aside .estudios .informacion .texto {
+  font-style: italic;
+}
+
+.contenedor-usuario aside .estudios .informacion .texto .fecha {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.contenedor-usuario aside .habilidades {
+  border-bottom: 0px solid #fff;
+  font-size: 18px;
+}
+
+.contenedor-usuario aside .habilidades ul {
+  padding-left: 20px;
+}
+
+.contenedor-usuario aside .habilidades ul li {
+  letter-spacing: 1.5px;
+  padding-bottom: 25px;
+}
+
+.contenedor-info-general {
+  width: 70%;
+  background: #f4f6ff;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+.contenedor-info-general header {
+  padding: 25px 0;
+  background: #e0dede;
+}
+
+.contenedor-info-general header .logo {
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+.contenedor-info-general header .logo p {
+  display: inline;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.contenedor-info-general header .cabecera {
+  text-align: center;
+}
+
+.contenedor-info-general header .cabecera .nombre {
+  letter-spacing: 10px;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 10px 25%;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.541);
+}
+
+.contenedor-info-general header .cabecera .oficio {
+  letter-spacing: 3px;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 10px 25%;
+  border-bottom: 0px solid rgba(20, 20, 20, 0.541);
+}
+
+.contenedor-info-general .main .experiencia {
+  padding: 30px 0;
+}
+
+.contenedor-info-general .main,
+.contenedor-info-general footer {
+  padding: 10px 40px;
+}
+
+.contenedor-info-general .main .linea,
+.contenedor-info-general footer .linea {
+  border-bottom: 2px solid #313131;
+}
+
+.contenedor-info-general .main .titulo-2,
+.contenedor-info-general footer .titulo-2 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+.contenedor-info-general .main .texto,
+.contenedor-info-general footer .texto {
+  font-style: italic;
+  font-weight: 600;
+  color: #0b2f50;
+}
+
+.contenedor-info-general .main .informacion,
+.contenedor-info-general footer .informacion {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.contenedor-info-general footer .referencias {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contenedor-info-general footer .referencia {
+  width: 50%;
+  padding: 0 50px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+* .contenedor-general {
+  background: #f4f6ff;
+  width: 90%;
+  margin: 20px auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 1px 1px 16px -3px black;
+          box-shadow: 1px 1px 16px -3px black;
+}
+
+* .titulo-1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+* .titulo-1 .linea {
+  border-bottom: 2px solid #d4d4d4;
+}
+
+* .titulo-2 {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 2.5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .contenedor-general {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor-general .contenedor-usuario {
+    width: 100%;
+  }
+  .contenedor-general .contenedor-info-general {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
